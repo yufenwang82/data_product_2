@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Peer-graded Assignment: R Markdown Presentation &amp; Plotly</title>
+	<meta name="description" content="Peer-graded Assignment: R Markdown Presentation &amp; Plotly">
+	<meta name="author" content="Yu-Fen Wang">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="libraries/highlighters/highlight/css/tomorrow.css" />  <link rel="stylesheet" href = "libraries/widgets/quiz/css/demo.css">
+<link rel="stylesheet" href = "libraries/widgets/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href = "assets/css/ribbons.css">
+  
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Peer-graded Assignment: R Markdown Presentation &amp; Plotly</h3>
+  <h3>Author: Yu-Fen Wang</h3>
+
+<h3>Date: 2017/11/3</h3>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>demo plot mtcar with plotly</h3>
+  <pre><code class="r">library(plotly)
+</code></pre>
+
+<pre><code>## Loading required package: ggplot2
+</code></pre>
+
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;
+</code></pre>
+
+<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot
+</code></pre>
+
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter
+</code></pre>
+
+<pre><code>## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout
+</code></pre>
+
+<pre><code class="r">library(datasets)
+data(mtcars)
+plot&lt;-plot_ly(mtcars,x=~cyl,y=~mpg,type = &quot;bar&quot;)
+print(plot)
+</code></pre>
+
+<h2>plot</h2>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	    tex2jax: {
+	      inlineMath: [['$','$'], ['\\(','\\)']],
+	      processEscapes: true
+	    }
+	  });
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script> -->
+	<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+	$(function (){ 
+	  $("#example").popover(); 
+	  $("[rel='tooltip']").tooltip(); 
+	});  
+	</script>   
+	</html>
